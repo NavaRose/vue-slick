@@ -124,11 +124,11 @@ export default {
 
     // Events
     onAfterChange: function(event, slick, currentSlide) {
-      this.$emit('afterChange', event, slick, currentSlide);
+      this.$emit('after-change', event, slick, currentSlide);
     },
 
     onBeforeChange: function(event, slick, currentSlide, nextSlide) {
-      this.$emit('beforeChange', event, slick, currentSlide, nextSlide);
+      this.$emit('before-change', event, slick, currentSlide, nextSlide);
     },
 
     onBreakpoint: function(event, slick, breakpoint) {
@@ -148,11 +148,11 @@ export default {
     },
 
     onReInit: function(event, slick) {
-      this.$emit('reInit', event, slick);
+      this.$emit('re-init', event, slick);
     },
 
     onSetPosition: function(event, slick) {
-      this.$emit('setPosition', event, slick);
+      this.$emit('set-position', event, slick);
     },
 
     onSwipe: function(event, slick, direction) {
@@ -160,11 +160,11 @@ export default {
     },
 
     onLazyLoaded: function(event, slick, image, imageSource) {
-      this.$emit('lazyLoaded', event, slick, image, imageSource);
+      this.$emit('lazy-loaded', event, slick, image, imageSource);
     },
 
     onLazyLoadError: function(event, slick, image, imageSource) {
-      this.$emit('lazyLoadError', event, slick, image, imageSource);
+      this.$emit('lazy-loadError', event, slick, image, imageSource);
     },
   },
 
